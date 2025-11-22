@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #fff8f0;
+        }
+
+        /* HEADER */
+        .header {
+            background: #d35400;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* NAVIGATION */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar a:hover {
+            background: #555;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            text-shadow: 2px 2px 10px black;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .hero button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background: #e67e22;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .hero button:hover {
+            background: #cf711f;
+        }
+
+        /* MENU SECTION */
+        .menu-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .menu-section h2 {
+            font-size: 36px;
+            color: #d35400;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .item h3 {
+            color: #e67e22;
+        }
+        .item p {
+            color: #555;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">🍽 Delicious Bites Restaurant</div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="hero" id="home">
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Fresh • Tasty • Hygienic — Made with Love ❤️</p>
+        <button onclick="location.href='#menu'">See Menu</button>
+    </div>
+
+    <div class="menu-section" id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-items">
+
+            <div class="item">
+                <h3>🍕 Pizza</h3>
+                <p>Cheese Burst • Chicken Tikka • Veg Supreme</p>
+                <strong>Rs 550</strong>
+            </div>
+
+            <div class="item">
+                <h3>🍔 Burgers</h3>
+                <p>Zinger • Beef • Chicken Crispy</p>
+                <strong>Rs 350</strong>
+            </div>
+
+            <div class="item">
+                <h3>🍝 Pasta</h3>
+                <p>Alfredo • Creamy White • Chicken Pasta</p>
+                <strong>Rs 450</strong>
+            </div>
+
+            <div class="item">
+                <h3>🍗 BBQ</h3>
+                <p>Malai Boti • Tikka • Seekh Kabab</p>
+                <strong>Rs 700</strong>
+            </div>
+
+            <div class="item">
+                <h3>🥤 Drinks</h3>
+                <p>Fresh Juices • Cold Drinks • Milkshakes</p>
+                <strong>Rs 150</strong>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        📞 Contact: 0300-1234567 | 📍 Karachi, Pakistan  
+        <br>© 2025 Delicious Bites Restaurant
+    </div>
+
+</body>
+</html>
