@@ -1,0 +1,84 @@
+* ---------- General Styles ---------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff7e6;
+}
+
+/* ---------- Header (Hero Section) ---------- */
+header {
+    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 4px 8px #000;
+}
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+header p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* ---------- Menu Preview Section ---------- */
+.menu-preview {
+    padding: 40px;
+    text-align: center;
+}
+
+.menu-preview h2 {
+    font-size: 32px;
+    color: #cc6e00;
+}
+
+/* Grid food items */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Each card */
+.item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #00000020;
+    text-align: center;
+}
+
+/* Food images */
+.item img {
+    width: 100%;
+    border-radius: 12px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.item h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.item span {
+    font-weight: bold;
+    color: #cc6e00;
+    font-size: 18px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #ff8800;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
