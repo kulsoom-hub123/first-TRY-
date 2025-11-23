@@ -1,84 +1,123 @@
-/* ---------- General Styles ---------- */
-body {
+/* ------------------- RESET ------------------- */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff7e6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ---------- Header (Hero Section) ---------- */
-header.hero {
-    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
-    height: 70vh;
+/* ------------------- BODY ------------------- */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff6e9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------- HEADER / HERO SECTION ------------------- */
+header {
+    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover no-repeat;
+    height: 80vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
-    text-shadow: 0 4px 8px #000;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
 }
 
 header h1 {
-    font-size: 60px;
-    margin: 0;
+    font-size: 65px;
+    font-weight: 700;
+    z-index: 2;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.9);
 }
 
 header p {
     font-size: 24px;
     margin-top: 10px;
+    font-weight: 300;
+    z-index: 2;
 }
 
-/* ---------- Menu Preview Section ---------- */
+/* ------------------- MENU SECTION ------------------- */
 .menu-preview {
-    padding: 40px;
+    padding: 60px 30px;
     text-align: center;
 }
 
 .menu-preview h2 {
-    font-size: 32px;
-    color: #cc6e00;
+    font-size: 40px;
+    color: #d16900;
+    margin-bottom: 35px;
+    font-weight: 700;
 }
 
 /* Grid food items */
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-/* Each card */
+/* Each food card */
 .item {
     background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px #00000020;
-    text-align: center;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
 }
 
-/* Food images */
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Food Image */
 .item img {
     width: 100%;
-    border-radius: 12px;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
+    border-radius: 14px;
 }
 
 .item h3 {
-    margin: 10px 0 5px;
-    color: #333;
+    margin-top: 12px;
+    font-size: 22px;
+    color: #444;
+}
+
+.item p {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #666;
 }
 
 .item span {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 20px;
+    color: #d16900;
     font-weight: bold;
-    color: #cc6e00;
-    font-size: 18px;
 }
 
-/* ---------- Footer ---------- */
+/* ------------------- FOOTER ------------------- */
 footer {
     background: #ff8800;
     color: white;
+    padding: 18px;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 40px;
 }
