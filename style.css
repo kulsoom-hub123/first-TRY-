@@ -1,95 +1,89 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #fff7f2;
-    color: #333;
+    margin: 0;
+    background: #fafafa;
 }
 
-/* Header */
-header {
-    background: #ff725e;
-    color: white;
+/* NAVBAR */
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
     align-items: center;
+    padding: 15px 25px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
 }
 
 .logo {
-    margin: 0;
-}
-
-nav a {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
+    font-size: 22px;
     font-weight: bold;
+    color: #222;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 70px 20px;
-    background: url("https://images.unsplash.com/photo-1551218808-94e220e084d2") center/cover no-repeat;
-    color: white;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.hero h2 {
-    font-size: 40px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 22px;
-    background: #ff725e;
-    color: white;
+.nav-links a {
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 16px;
+    color: #444;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-/* Why Choose Us */
-.why {
+.nav-links a:hover,
+.nav-links .active {
+    color: #ff5722;
+}
+
+/* MENU PAGE */
+.menu-section {
     padding: 30px;
     text-align: center;
 }
 
-/* Menu Page */
-.menu-section {
-    padding: 40px;
-    text-align: center;
+.menu-title {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #333;
 }
 
-.menu-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 10px;
 }
 
 .item {
     background: white;
-    padding: 15px;
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
 }
 
 .item img {
     width: 100%;
-    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Order */
-.order-section {
-    padding: 40px;
-    text-align: center;
+.item h2 {
+    margin: 15px 0 5px;
+    color: #222;
 }
 
-form input {
-    width: 60%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #aaa;
+.item p {
+    color: #555;
 }
