@@ -1,101 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Restaurant</title>
-
-    <style>
-        body {
-            background-color: #fff7e6;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #ff914d;
-            padding: 20px;
-            color: white;
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        .menu-container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #ff914d;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .item {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-            font-size: 18px;
-        }
-
-        .item:last-child {
-            border-bottom: none;
-        }
-
-        .price {
-            font-weight: bold;
-            color: #ff5e00;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #ff914d;
-            color: white;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-    <header>
-        🍽️ Welcome to My Restaurant
-    </header>
+<nav>
+  <div class="logo">Delish Restaurant</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="payment.html">Payment</a></li>
+  </ul>
+</nav>
 
-    <div class="menu-container">
-        <h2>Starters</h2>
-        <div class="item"><span>Chicken Corn Soup</span> <span class="price">Rs. 250</span></div>
-        <div class="item"><span>Spring Rolls</span> <span class="price">Rs. 180</span></div>
-        <div class="item"><span>French Fries</span> <span class="price">Rs. 120</span></div>
-    </div>
+<h1 class="menu-title">Our Special Menu</h1>
 
-    <div class="menu-container">
-        <h2>Main Course</h2>
-        <div class="item"><span>Chicken Biryani</span> <span class="price">Rs. 250</span></div>
-        <div class="item"><span>Beef Karahi</span> <span class="price">Rs. 900</span></div>
-        <div class="item"><span>Special Handi</span> <span class="price">Rs. 750</span></div>
-        <div class="item"><span>Zinger Burger</span> <span class="price">Rs. 350</span></div>
-    </div>
+<div class="menu-grid">
 
-    <div class="menu-container">
-        <h2>Drinks</h2>
-        <div class="item"><span>Cold Drink</span> <span class="price">Rs. 80</span></div>
-        <div class="item"><span>Fresh Juice</span> <span class="price">Rs. 150</span></div>
-        <div class="item"><span>Tea</span> <span class="price">Rs. 50</span></div>
-    </div>
+  <div class="menu-box">
+    <img src="https://i.imgur.com/eTmWoAN.png" />
+    <h3>Chicken Biryani</h3>
+    <p>Spicy & authentic biryani with flavor</p>
+  </div>
 
-    <footer>
-        © 2025 My Restaurant — All Rights Reserved 🍽️
-    </footer>
+  <div class="menu-box">
+    <img src="https://i.imgur.com/EIwGxCw.jpeg" />
+    <h3>Zinger Burger</h3>
+    <p>Crispy, cheesy and delicious</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="https://i.imgur.com/HzpF4Il.jpeg" />
+    <h3>Pizza Loaded</h3>
+    <p>Melting cheese & toppings</p>
+  </div>
+
+  <div class="menu-box">
+    <img src="https://i.imgur.com/3ZQ3JWs.jpeg" />
+    <h3>BBQ Platter</h3>
+    <p>Perfect grilled goodness</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Delish Restaurant | All Rights Reserved
+</footer>
 
 </body>
 </html>
